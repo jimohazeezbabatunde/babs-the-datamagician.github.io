@@ -22,31 +22,28 @@
       padding: 40px;
     }
     .profile {
-      display: flex;
-      align-items: center;
-      gap: 30px;
+      text-align: center;
+      margin-bottom: 40px;
     }
     .profile img {
-      width: 140px;
-      height: 140px;
+      width: 150px;
+      height: 150px;
       border-radius: 50%;
       object-fit: cover;
       border: 3px solid #00a8ff;
     }
     .profile h1 {
-      margin: 0;
+      margin-top: 15px;
       font-size: 26px;
     }
     .profile p {
       margin: 5px 0;
     }
-    .section {
-      margin-top: 40px;
-    }
     h2 {
       border-bottom: 2px solid #00a8ff;
       display: inline-block;
       padding-bottom: 5px;
+      margin-top: 30px;
     }
     .card {
       background: #f9f9f9;
@@ -54,10 +51,11 @@
       border-radius: 10px;
       margin: 15px 0;
     }
-    .info-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 15px;
+    ul {
+      margin: 10px 0 0 20px;
+    }
+    .section {
+      margin-top: 40px;
     }
     .social a {
       text-decoration: none;
@@ -69,66 +67,66 @@
 <body>
   <div class="container">
     <div class="profile">
-      <img src="yourphoto.jpg" alt="Your photo">
-      <div>
-        <h1>Jimoh Azeez Babatunde</h1>
-        <p>🎓 Economist | 📊 Data Analyst | Power BI Enthusiast</p>
-        <p>I transform raw data into actionable insights that drive informed business decisions.</p>
+      <img src="yourphoto.jpg" alt="Jimoh Azeez Babatunde">
+      <h1>👋 Hi, I’m Jimoh Azeez Babatunde</h1>
+      <p>🎓 Economist | Data Analyst | Power BI Enthusiast</p>
+      <p>📊 I transform raw data into actionable insights that drive business growth and decision-making.</p>
+    </div>
+
+    <div class="section">
+      <h2>🧠 About Me</h2>
+      <div class="card">
+        <p>
+          I’m passionate about transforming raw numbers into meaningful insights that drive informed decisions.
+          With a strong background in Economics and Data Analytics, I specialize in collecting, cleaning, and interpreting data to uncover patterns and support strategic planning.
+        </p>
+        <p>
+          Known as <strong>“Babs the Data Magician,”</strong> I blend analytical precision with creative problem-solving —
+          turning complex datasets into clear, actionable economic insights.
+          My work spans data visualization, business intelligence, and statistical analysis, helping organizations make smarter, evidence-based decisions.
+        </p>
       </div>
     </div>
 
     <div class="section">
-      <h2>Experience</h2>
-      <div class="info-grid">
-        <div class="card">
-          <strong>Administrative Officer — INEC</strong><br>
-          <small>2024 – Present</small>
-          <ul>
-            <li>Collected and analyzed voter registration data</li>
-            <li>Maintained data integrity for national election records</li>
-          </ul>
-        </div>
-        <div class="card">
-          <strong>Data Analyst — Freelance</strong><br>
-          <small>2023 – Present</small>
-          <ul>
-            <li>Developed Power BI dashboards and Excel reports</li>
-            <li>Automated business insights using SQL and Python</li>
-          </ul>
-        </div>
+      <h2>🧰 Skills, Tools & Interests</h2>
+      <div class="card">
+        <p><strong>🛠️ Skills:</strong> Problem Solving, Requirement Gathering, Communication, Self-Learning, Data Entry, Emotional Intelligence</p>
+        <p><strong>💻 Tools:</strong> Excel, Google Sheets, Power BI, SQL, Tableau, Python (NumPy, Pandas, Matplotlib, Seaborn), Power Query, MS Word, MS PowerPoint</p>
+        <p><strong>📈 Interests:</strong> Data Analysis, Financial & Business Analysis, Econometrics & Statistical Analysis</p>
       </div>
     </div>
 
     <div class="section">
-      <h2>Education & Certifications</h2>
-      <div class="info-grid">
-        <div class="card">
-          <strong>B.Sc. Economics</strong><br>
-          University Name<br>
-          <small>Graduated: Year</small>
-        </div>
-        <div class="card">
-          <strong>Data Analytics Certification</strong><br>
-          Datacamp / Coursera<br>
-          <small>2024</small>
-        </div>
+      <h2>📂 Featured Project</h2>
+      <div class="card">
+        <p><strong>🧾 Layoff Analysis Project</strong></p>
+        <p><strong>Tools Used:</strong> SQL</p>
+        <p><strong>🔍 Overview:</strong> This project demonstrates the importance of data cleaning as a critical first step before analysis. After cleaning the layoff dataset, the insights revealed global patterns and industry trends, empowering stakeholders to make better-informed workforce decisions.</p>
+        <p><strong>🚀 Outcome:</strong> Applying this approach enables organizations to respond to workforce changes with greater foresight and resilience.</p>
       </div>
     </div>
 
     <div class="section">
-      <h2>Tools & Skills</h2>
-      <p>Power BI | Excel | SQL | Python | DAX | Data Visualization | Reporting | Business Analysis</p>
+      <h2>🎓 Education</h2>
+      <div class="card">
+        <p>🎓 <strong>B.Sc. in Economics</strong></p>
+        <p>🏛️ University of Ibadan</p>
+        <p>📅 Graduated: 2022</p>
+      </div>
     </div>
 
     <div class="section">
-      <h2>Contact</h2>
-      <p>
-        📧 <strong>Email:</strong> yourname@email.com<br>
-        📞 <strong>Phone:</strong> +234xxxxxxxxxx<br>
-        🌐 <a href="https://github.com/yourusername">GitHub</a> |
-        <a href="https://linkedin.com/in/yourlinkedin">LinkedIn</a>
-      </p>
+      <h2>🌐 Connect With Me</h2>
+      <div class="card social">
+        <p>📧 <strong>Email:</strong> <a href="mailto:jimohazeezbabatunde1991@gmail.com">jimohazeezbabatunde1991@gmail.com</a></p>
+        <p>💼 <strong>LinkedIn:</strong> <a href="https://linkedin.com/in/yourlinkedin" target="_blank">View Profile</a></p>
+        <p>🐦 <strong>Twitter (X):</strong> <a href="https://twitter.com/itz_babatunde" target="_blank">@itz_babatunde</a></p>
+      </div>
     </div>
+
+    <p style="text-align:center; margin-top:40px; font-style:italic; color:#555;">⭐ “Data is the new oil, but insight is the refinery.”</p>
   </div>
 </body>
 </html>
+
