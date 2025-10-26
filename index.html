@@ -22,22 +22,30 @@
       padding: 40px;
     }
     .profile {
-      text-align: center;
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      flex-wrap: wrap;
       margin-bottom: 40px;
     }
     .profile img {
-      width: 150px;
-      height: 150px;
+      width: 160px;
+      height: 160px;
       border-radius: 50%;
       object-fit: cover;
       border: 3px solid #00a8ff;
     }
-    .profile h1 {
-      margin-top: 15px;
+    .profile-text {
+      flex: 1;
+      min-width: 250px;
+    }
+    .profile-text h1 {
+      margin: 0;
       font-size: 26px;
     }
-    .profile p {
-      margin: 5px 0;
+    .profile-text p {
+      margin: 6px 0;
+      line-height: 1.6;
     }
     h2 {
       border-bottom: 2px solid #00a8ff;
@@ -50,9 +58,6 @@
       padding: 15px 20px;
       border-radius: 10px;
       margin: 15px 0;
-    }
-    ul {
-      margin: 10px 0 0 20px;
     }
     .section {
       margin-top: 40px;
@@ -68,9 +73,11 @@
   <div class="container">
     <div class="profile">
       <img src="yourphoto.jpg" alt="Jimoh Azeez Babatunde">
-      <h1>👋 Hi, I’m Jimoh Azeez Babatunde</h1>
-      <p>🎓 Economist | Data Analyst | Power BI Enthusiast</p>
-      <p>📊 I transform raw data into actionable insights that drive business growth and decision-making.</p>
+      <div class="profile-text">
+        <h1>👋 Hi, I’m Jimoh Azeez Babatunde</h1>
+        <p>🎓 Economist | Data Analyst | Power BI Enthusiast</p>
+        <p>📊 I transform raw data into actionable insights that drive business growth and decision-making.</p>
+      </div>
     </div>
 
     <div class="section">
