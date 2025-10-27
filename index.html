@@ -1,138 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jimoh Azeez Babatunde | Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Babs The Data Magician | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
   <style>
     body {
       font-family: 'Poppins', sans-serif;
-      background-color: #f4f6f9;
-      color: #2f3640;
+      background-color: #f4f6fa;
+      color: #2c3e50;
       margin: 0;
       padding: 0;
     }
     .container {
-      max-width: 950px;
-      margin: 50px auto;
-      background: #fff;
+      max-width: 1000px;
+      margin: 40px auto;
+      background: white;
       border-radius: 15px;
       box-shadow: 0 4px 20px rgba(0,0,0,0.1);
       padding: 40px;
     }
-    .profile {
+    .header {
       display: flex;
       align-items: center;
       gap: 30px;
       flex-wrap: wrap;
-      margin-bottom: 40px;
     }
-    .profile img {
-      width: 160px;
-      height: 160px;
+    .header img {
+      width: 140px;
+      height: 140px;
       border-radius: 50%;
       object-fit: cover;
       border: 3px solid #00a8ff;
     }
-    .profile-text {
-      flex: 1;
-      min-width: 250px;
-    }
-    .profile-text h1 {
+    .intro h1 {
       margin: 0;
-      font-size: 26px;
+      font-size: 24px;
     }
-    .profile-text p {
-      margin: 6px 0;
-      line-height: 1.6;
+    .intro p {
+      margin: 5px 0;
+      line-height: 1.5;
     }
-    h2 {
+    .section {
+      margin-top: 40px;
+    }
+    .section h2 {
+      color: #00a8ff;
       border-bottom: 2px solid #00a8ff;
       display: inline-block;
       padding-bottom: 5px;
-      margin-top: 30px;
     }
     .card {
-      background: #f9f9f9;
+      background: #f9fafc;
       padding: 15px 20px;
       border-radius: 10px;
       margin: 15px 0;
     }
-    .section {
-      margin-top: 40px;
+    .experience-grid {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .exp-item {
+      flex: 1;
+      min-width: 250px;
+      background: #f9fafc;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+    .tools {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .tool-item {
+      background: #e6f4ff;
+      padding: 5px 10px;
+      border-radius: 8px;
+      font-size: 14px;
     }
     .social a {
       text-decoration: none;
       color: #00a8ff;
       margin-right: 15px;
     }
+    .footer {
+      text-align: center;
+      margin-top: 40px;
+      font-style: italic;
+      color: #555;
+    }
   </style>
 </head>
 <body>
   <div class="container">
-    <div class="profile">
-      <img src="yourphoto.jpg" alt="Jimoh Azeez Babatunde">
-      <div class="profile-text">
-        <h1>👋 Hi, I’m Jimoh Azeez Babatunde</h1>
+    <div class="header">
+      <img src="yourphoto.jpg" alt="Babs The Data Magician">
+      <div class="intro">
+        <h1>Jimoh Azeez Babatunde</h1>
         <p>🎓 Economist | Data Analyst | Power BI Enthusiast</p>
         <p>📊 I transform raw data into actionable insights that drive business growth and decision-making.</p>
       </div>
     </div>
 
     <div class="section">
-      <h2>🧠 About Me</h2>
+      <h2>About Me</h2>
       <div class="card">
-        <p>
-          I’m passionate about transforming raw numbers into meaningful insights that drive informed decisions.
-          With a strong background in Economics and Data Analytics, I specialize in collecting, cleaning, and interpreting data to uncover patterns and support strategic planning.
-        </p>
-        <p>
-          Known as <strong>“Babs the Data Magician,”</strong> I blend analytical precision with creative problem-solving —
-          turning complex datasets into clear, actionable economic insights.
-          My work spans data visualization, business intelligence, and statistical analysis, helping organizations make smarter, evidence-based decisions.
-        </p>
+        <p>I’m passionate about transforming raw numbers into meaningful insights that drive informed decisions.
+        Known as <b>“Babs the Data Magician,”</b> I blend analytical precision with creative problem-solving —
+        turning complex datasets into clear, actionable economic insights.</p>
       </div>
     </div>
 
     <div class="section">
-      <h2>🧰 Skills, Tools & Interests</h2>
-      <div class="card">
-        <p><strong>🛠️ Skills:</strong> Problem Solving, Requirement Gathering, Communication, Self-Learning, Data Entry, Emotional Intelligence</p>
-        <p><strong>💻 Tools:</strong> Excel, Google Sheets, Power BI, SQL, Tableau, Python (NumPy, Pandas, Matplotlib, Seaborn), Power Query, MS Word, MS PowerPoint</p>
-        <p><strong>📈 Interests:</strong> Data Analysis, Financial & Business Analysis, Econometrics & Statistical Analysis</p>
+      <h2>Experience</h2>
+      <div class="experience-grid">
+        <div class="exp-item">
+          <h3>Data Analyst (Remote)</h3>
+          <p><b>Freelance</b> | 2023–Present</p>
+          <ul>
+            <li>Developed Power BI dashboards and insights</li>
+            <li>Performed data cleaning and modeling</li>
+          </ul>
+        </div>
+        <div class="exp-item">
+          <h3>Administrative Officer</h3>
+          <p><b>INEC</b> | 2022–2023</p>
+          <ul>
+            <li>Collected and processed Continuous Voter Registration data</li>
+            <li>Supported field data gathering for national elections</li>
+          </ul>
+        </div>
       </div>
     </div>
 
     <div class="section">
-      <h2>📂 Featured Project</h2>
+      <h2>Skills, Tools & Interests</h2>
       <div class="card">
-        <p><strong>🧾 Layoff Analysis Project</strong></p>
-        <p><strong>Tools Used:</strong> SQL</p>
-        <p><strong>🔍 Overview:</strong> This project demonstrates the importance of data cleaning as a critical first step before analysis. After cleaning the layoff dataset, the insights revealed global patterns and industry trends, empowering stakeholders to make better-informed workforce decisions.</p>
-        <p><strong>🚀 Outcome:</strong> Applying this approach enables organizations to respond to workforce changes with greater foresight and resilience.</p>
+        <p><b>Skills:</b> Problem Solving, Communication, Data Entry, Analytical Thinking</p>
+        <div class="tools">
+          <div class="tool-item">Excel</div>
+          <div class="tool-item">Power BI</div>
+          <div class="tool-item">SQL</div>
+          <div class="tool-item">Python</div>
+          <div class="tool-item">Tableau</div>
+          <div class="tool-item">Power Query</div>
+        </div>
       </div>
     </div>
 
     <div class="section">
-      <h2>🎓 Education</h2>
+      <h2>Education</h2>
       <div class="card">
-        <p>🎓 <strong>B.Sc. in Economics</strong></p>
-        <p>🏛️ University of Ibadan</p>
-        <p>📅 Graduated: 2022</p>
+        <p><b>B.Sc. Economics</b> — University of Ibadan (2022)</p>
       </div>
     </div>
 
     <div class="section">
-      <h2>🌐 Connect With Me</h2>
+      <h2>Connect With Me</h2>
       <div class="card social">
-        <p>📧 <strong>Email:</strong> <a href="mailto:jimohazeezbabatunde1991@gmail.com">jimohazeezbabatunde1991@gmail.com</a></p>
-        <p>💼 <strong>LinkedIn:</strong> <a href="https://linkedin.com/in/yourlinkedin" target="_blank">View Profile</a></p>
-        <p>🐦 <strong>Twitter (X):</strong> <a href="https://twitter.com/itz_babatunde" target="_blank">@itz_babatunde</a></p>
+        <p>📧 <a href="mailto:jimohazeezbabatunde1991@gmail.com">jimohazeezbabatunde1991@gmail.com</a></p>
+        <p>💼 <a href="https://linkedin.com/in/yourlinkedin" target="_blank">LinkedIn</a></p>
+        <p>🐦 <a href="https://twitter.com/itz_babatunde" target="_blank">@itz_babatunde</a></p>
+        <p>💻 <a href="https://github.com/babs-the-datamagician" target="_blank">GitHub</a></p>
       </div>
     </div>
 
-    <p style="text-align:center; margin-top:40px; font-style:italic; color:#555;">⭐ “Data is the new oil, but insight is the refinery.”</p>
+    <div class="footer">
+      ⭐ “Data is the new oil, but insight is the refinery.”
+    </div>
   </div>
 </body>
 </html>
