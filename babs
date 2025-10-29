@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Babs the Data Magician Portfolio</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <style>
+      /* ===== Menu Button ===== */
+      .menu-btn {
+        position: fixed;
+        top: 20px;
+        right: 25px;
+        background: #1d4ed8;
+        color: #fff;
+        border: none;
+        padding: 10px 16px;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 500;
+        transition: background 0.3s ease;
+        z-index: 1000;
+      }
+
+      .menu-btn:hover {
+        background: #2563eb;
+      }
+
+      /* ===== Popup Menu ===== */
+      .popup-menu {
+        display: none;
+        position: fixed;
+        top: 70px;
+        right: 25px;
+        background: #fff;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+        border-radius: 12px;
+        overflow: hidden;
+        width: 200px;
+        z-index: 1000;
+      }
+
+      .popup-menu a {
+        display: block;
+        padding: 12px 16px;
+        text-decoration: none;
+        color: #111;
+        font-weight: 500;
+        transition: background 0.2s ease;
+      }
+
+      .popup-menu a:hover {
+        background: #f1f5f9;
+      }
+    </style>
+  </head>
+
+  <body class="is-preload">
+    <!-- ===== Menu Button ===== -->
+    <button class="menu-btn" id="menuBtn">☰ Menu</button>
+
+    <!-- ===== Popup Menu ===== -->
+    <div class="popup-menu" id="popupMenu">
+      <a href="YOUR_RESUME_LINK_HERE" target="_blank" rel="noopener noreferrer">View Resume</a>
+    </div>
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Header -->
+      <header id="header">
+        <div class="logo">
+          <span class="icon fa-gem"></span>
+        </div>
+        <div class="content">
+          <div class="inner">
+            <h1>Jimoh Azeez Babatunde</h1>
+            <p>Economist | Data Analyst</p>
+            I transform raw data into actionable insights that drive business growth and decision-making.
+          </div>
+        </div>
+      </header>
+
+      <!-- Main -->
+      <div id="main">
+        <!-- Intro -->
+        <article id="intro">
+          <h2 class="major">Intro</h2>
+          <span class="image main"><img src="images/yourphoto.jpg" alt="" /></span>
+          <p>
+            I'm passionate about transforming raw numbers into meaningful insights that drive informed
+            decisions. With a strong background in Economics and Data Analytics, I specialize in collecting,
+            cleaning, and interpreting data to uncover patterns and support strategic planning.
+          </p>
+        </article>
+      </div>
+
+      <!-- Footer -->
+      <footer id="footer">
+        <p class="copyright">
+          &copy; Jimoh Azeez Babatunde. Design: <a href="https://html5up.net">HTML5 UP</a>.
+        </p>
+      </footer>
+    </div>
+
+    <!-- BG -->
+    <div id="bg"></div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <!-- ===== Popup Script ===== -->
+    <script>
+      const menuBtn = document.getElementById("menuBtn");
+      const popupMenu = document.getElementById("popupMenu");
+
+      menuBtn.addEventListener("click", () => {
+        popupMenu.style.display = popupMenu.style.display === "block" ? "none" : "block";
+      });
+
+      document.addEventListener("click", (e) => {
+        if (!popupMenu.contains(e.target) && !menuBtn.contains(e.target)) {
+          popupMenu.style.display = "none";
+        }
+      });
+    </script>
+  </body>
+</html>
